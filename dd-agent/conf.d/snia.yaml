@@ -1,0 +1,29 @@
+
+init_config:
+    default_timeout: 2
+   
+
+instances:
+    
+
+  - name: SNIA
+    url: 14.142.119.130:5000/redfish/v1/
+    url_storage: "StorageServices/3/Volumes"
+    url_fs_storage: "StorageServices/3/FileSystems"
+    volumes_dump: "get_json_service"
+    fs_dump: "get_json_fs_service"
+    #type: "3"
+
+    url-tag1: "/Volumes/vol3"
+    #url-tag3: "/StoragePools/BasePool"  
+    #url-tag2: "/Volumes/vol4"
+
+    timeout: 5
+    content_match: 'CapacitySources'
+    
+    process_config:
+      enabled: 'true'
+    include_content: true
+    collect_response_time: true
+    skip_event: true
+  

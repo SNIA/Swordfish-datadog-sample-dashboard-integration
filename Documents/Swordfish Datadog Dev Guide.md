@@ -6,8 +6,7 @@ The purpose of this Developer Guide is to display the Datadog dashboards and
 provide instruction on how to create them. Installation and user guides are also
 available.
 
-[link](#section)
-
+[link](#TopOfDoc)
 
 - [Contents ] (#Contents)
 
@@ -28,7 +27,7 @@ available.
 
 Disclaimer
 ==========
-<a name="section"></a>
+<a name="TopOfDoc"></a>
 
 The information contained in this publication is subject to change without
 notice. The SNIA makes no warranty of any kind with regard to this

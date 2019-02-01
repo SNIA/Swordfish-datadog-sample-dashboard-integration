@@ -1,5 +1,7 @@
 
 
+<a name="section"></a>
+
 
 
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
@@ -40,6 +42,7 @@ Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
 
+[Top](#section)
 
 
 Introduction
@@ -63,6 +66,7 @@ SNIA Swordfish has been designed around management use cases that focus on what
 IT administrators need to do with storage equipment and storage services in a
 data center. As a result, the API provides functionality that simplifies the way
 storage can be allocated, monitored, and managed.
+
 [Top](#section)
 
 **SNIA Swordfish Datadog Sample Integration**
@@ -83,6 +87,7 @@ interactive dashboards that can be customized to specific needs, full-text
 search capabilities for metrics and events, sharing and discussion tools so
 teams can collaborate using the insights they surface, targeted alerts for
 critical issues, and API access to accommodate unique infrastructures.
+
 [Top](#section)
 
 SNIA Swordfish Sample Integration Dashboard for Datadog
@@ -108,6 +113,7 @@ different collections like Volumes, Storage pools and filesystems.
 
 Data Collection: Using different custom metrics, Datadog will collect all the
 required data and visualize it in to a Graph or Gauge
+
 [Top](#section)
 
 Brief Working Functionality
@@ -132,6 +138,8 @@ and use the Datadog dashboards.
 
 7.  Create Datadog dashboards to show the required data in graphs. Instrument
     your own gauges, counters, timers and histograms.
+
+[Top](#section)
 
 Overview of Agents and Metrics
 ==============================
@@ -176,6 +184,8 @@ changed. Metrics type is visible on metrics summary page.
 
 There are many ways to send a metrics to Datadog, including with Datadog agent
 directly, by using StatsD, or submit metrics directly to Datadog HTTP API.
+
+[Top](#section)
 
 Integration of Datadog dashboard
 ================================
@@ -249,6 +259,8 @@ Checks (python) files
     -   E.g., sudo service datadog-agent restart . (In Ubuntu operating system.)
 
 ![](media/7224012d11ae35b263adaa2f0592a003.png)
+
+[Top](#section)
 
 Creation of Datadog Dashboard
 =============================
@@ -327,6 +339,8 @@ The graph editor mode is shown in figure below. The developer can use the
 options to select visualization and add metrics data.
 
 ![](media/47ed65bb9e9e6b5e093b64709b637bbc.png)
+
+[Top](#section)
 
 Additional information on the SNIA Swordfish specification and use is available
 at https://www.snia.org/swordfish and <https://github.com/SNIA>.

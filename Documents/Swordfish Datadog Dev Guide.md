@@ -146,7 +146,7 @@ from applications.
 Forwarder: Retrieves data from both DogStatsD and the collector, and then queues
 it up to be sent to Datadog.
 
-Agent check:
+Agent check
 ------------
 
 Agent checks are used to collect metrics from custom application or systems.
@@ -159,7 +159,7 @@ instance which is a dict having configuration of particular instance.
 
 The check method is run once per instance defined in checks configuration.
 
-Metrics:
+Metrics
 --------
 
 Metrics allows creating Query metrics from any time period and post metrics data

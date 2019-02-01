@@ -5,12 +5,14 @@
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
 SNIA SwordfishTM Datadog Sample Integration Developer Guide
+==========
 
 The purpose of this Developer Guide is to display the Datadog dashboards and
 provide instruction on how to create them. Installation and user guides are also
 available.
 
 Contents
+==========
 - [Introduction](#introduction)
 - [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
 - [Brief Working Functionality](#brief-working-functionality)

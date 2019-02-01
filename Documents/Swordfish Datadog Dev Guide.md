@@ -29,19 +29,7 @@ Contents
   * [Checks (python) Files](#checks--python--files)
 - [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
   * [Time Board](#time-board)
-  
-- [Introduction](#introduction)
-- [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
-- [Brief Working Functionality](#brief-working-functionality)
-- [Overview of Agents and Metrics](#overview-of-agents-and-metrics)
-  * [Datadog Agent](#datadog-agent)
-  * [Agent check](#agent-check)
-  * [Metrics](#metrics)
-- [Integration of Datadog dashboard](#integration-of-datadog-dashboard)
-  * [Configuration Files (YAML)](#config-files--yaml)
-  * [Checks (python) Files](#checks--python--files)
-- [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
-  * [Time Board](#time-board)
+
 
 Disclaimer
 ========

@@ -229,6 +229,8 @@ Config files (YAML)
 
 ![](media/15cc65f70cc3988b49ebe627efb7458e.png)
 
+[Top](#section)
+
 Checks (python) files
 ---------------------
 

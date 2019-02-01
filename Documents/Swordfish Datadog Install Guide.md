@@ -12,7 +12,7 @@ user guides are also available.
 
 - [Disclaimer](#disclaimer)
     + [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
-  + [Brief Working Functionality](#brief-working-functionality-)
+    * [Brief Working Functionality](#brief-working-functionality-)
     + [Steps to install and run Datadog Agent](#steps-to-install-and-run-datadog-agent-)
     + [To Configure Sample Dashboard](#to-configure-sample-dashboard-)
 

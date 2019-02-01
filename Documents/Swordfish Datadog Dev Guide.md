@@ -6,7 +6,7 @@ The purpose of this Developer Guide is to display the Datadog dashboards and
 provide instruction on how to create them. Installation and user guides are also
 available.
 
-Contents
+[Contents ] (#Contents)
 
 - [Disclaimer](#disclaimer)
 - [Introduction:](#introduction-)
@@ -21,7 +21,7 @@ Contents
   * [Checks (python) files](#checks--python--files)
 - [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
   * [Time Board](#time-board)
-ScreenBoard 8
+
 
 Disclaimer
 ==========
@@ -39,7 +39,7 @@ Copyright © 2016-2019 Storage Networking Industry Association.
 
 Introduction:
 =============
-
+[Contents ] (#Contents)
 **SNIA Swordfish™ Specification**
 
 The SNIA Swordfish™ specification helps to provide a unified approach for the

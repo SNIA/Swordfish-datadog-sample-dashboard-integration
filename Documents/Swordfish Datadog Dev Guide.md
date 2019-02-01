@@ -15,6 +15,8 @@ available.
 
 Contents
 ========
+- [Contents](#contents)
+- [Disclaimer](#disclaimer)
 - [Introduction](#introduction)
 - [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
 - [Brief Working Functionality](#brief-working-functionality)
@@ -23,8 +25,21 @@ Contents
   * [Agent check](#agent-check)
   * [Metrics](#metrics)
 - [Integration of Datadog dashboard](#integration-of-datadog-dashboard)
-  * [Config files (YAML)](#config-files--yaml-)
-  * [Checks (python) files](#checks--python--files)
+  * [Configuration Files (YAML)](#configuration-files--yaml-)
+  * [Checks (python) Files](#checks--python--files)
+- [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
+  * [Time Board](#time-board)
+  
+- [Introduction](#introduction)
+- [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
+- [Brief Working Functionality](#brief-working-functionality)
+- [Overview of Agents and Metrics](#overview-of-agents-and-metrics)
+  * [Datadog Agent](#datadog-agent)
+  * [Agent check](#agent-check)
+  * [Metrics](#metrics)
+- [Integration of Datadog dashboard](#integration-of-datadog-dashboard)
+  * [Configuration Files (YAML)](#config-files--yaml)
+  * [Checks (python) Files](#checks--python--files)
 - [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
   * [Time Board](#time-board)
 
@@ -207,8 +222,9 @@ Existing checks must be modified to create and collect metrics.
     the check file is named “**sample.py**“, then the config file must be named
     **sample.yaml.**
 
-Config files (YAML)
+Configuration Files (YAML)
 -------------------
+
 
 -   **Objective:** the developer can configure server integration by adding url
     and sub tags. Each check has a YAML configuration file that is placed in
@@ -231,7 +247,7 @@ Config files (YAML)
 
 [Top](#section)
 
-Checks (python) files
+Checks (python) Files
 ---------------------
 
 -   **Objective:** The main part of checks is making a request to a URL. Once

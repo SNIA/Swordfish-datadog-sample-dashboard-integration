@@ -1,5 +1,6 @@
 
 
+
 <a name="section"></a>
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
@@ -37,7 +38,7 @@ Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
 
-[link](#section)
+[Top](#section)
 
 Introduction
 ============
@@ -60,6 +61,7 @@ SNIA Swordfish has been designed around management use cases that focus on what
 IT administrators need to do with storage equipment and storage services in a
 data center. As a result, the API provides functionality that simplifies the way
 storage can be allocated, monitored, and managed.
+[Top](#section)
 
 **SNIA Swordfish Datadog Sample Integration**
 
@@ -79,6 +81,7 @@ interactive dashboards that can be customized to specific needs, full-text
 search capabilities for metrics and events, sharing and discussion tools so
 teams can collaborate using the insights they surface, targeted alerts for
 critical issues, and API access to accommodate unique infrastructures.
+[Top](#section)
 
 SNIA Swordfish Sample Integration Dashboard for Datadog
 =======================================================
@@ -103,6 +106,7 @@ different collections like Volumes, Storage pools and filesystems.
 
 Data Collection: Using different custom metrics, Datadog will collect all the
 required data and visualize it in to a Graph or Gauge
+[Top](#section)
 
 Brief Working Functionality
 ===========================

@@ -6,8 +6,7 @@ The purpose of this Developer Guide is to display the Datadog dashboards and
 provide instruction on how to create them. Installation and user guides are also
 available.
 
-
-- [Contents ] (#Contents)
+Contents
 
 - [Disclaimer](#disclaimer)
 - [Introduction:](#introduction-)
@@ -38,7 +37,7 @@ Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
 
-<div style="text-align: right">  [Top of document](#TopOfDoc) </div> 
+<div style="text-align: right">  </div>   [Top of document](#TopOfDoc)
 
 Introduction:
 =============

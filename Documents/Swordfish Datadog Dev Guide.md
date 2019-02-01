@@ -1,3 +1,6 @@
+
+
+<a name="section"></a>
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
 SNIA SwordfishTM Datadog Sample Integration Developer Guide
@@ -5,6 +8,20 @@ SNIA SwordfishTM Datadog Sample Integration Developer Guide
 The purpose of this Developer Guide is to display the Datadog dashboards and
 provide instruction on how to create them. Installation and user guides are also
 available.
+
+Contents
+- [Introduction](#introduction)
+- [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
+- [Brief Working Functionality](#brief-working-functionality)
+- [Overview of Agents and Metrics](#overview-of-agents-and-metrics)
+  * [Datadog Agent](#datadog-agent)
+  * [Agent check:](#agent-check-)
+  * [Metrics:](#metrics-)
+- [Integration of Datadog dashboard](#integration-of-datadog-dashboard)
+  * [Config files (YAML)](#config-files--yaml-)
+  * [Checks (python) files](#checks--python--files)
+- [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
+  * [Time Board](#time-board)
 
 Disclaimer
 ==========
@@ -19,6 +36,8 @@ connection with the furnishing, performance, or use.
 Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
+
+[link](#section)
 
 Introduction
 ============

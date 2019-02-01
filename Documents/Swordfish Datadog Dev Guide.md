@@ -25,7 +25,7 @@ Contents
   * [Metrics](#metrics)
 - [Integration of Datadog dashboard](#integration-of-datadog-dashboard)
   * [Configuration Files (YAML)](#\configuration-files--yaml-)
-  * [Checks (python) Files](#/checks--python--files)
+  * [Checks (python) Files](#checks--python--files)
 - [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
   * [Time Board](#time-board)
 

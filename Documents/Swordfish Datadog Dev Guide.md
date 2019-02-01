@@ -6,7 +6,9 @@ The purpose of this Developer Guide is to display the Datadog dashboards and
 provide instruction on how to create them. Installation and user guides are also
 available.
 
-[link](#TopOfDoc)
+
+<a name="TopOfDoc"></a>
+
 
 - [Contents ] (#Contents)
 
@@ -27,7 +29,6 @@ available.
 
 Disclaimer
 ==========
-<a name="TopOfDoc"></a>
 
 The information contained in this publication is subject to change without
 notice. The SNIA makes no warranty of any kind with regard to this
@@ -39,6 +40,8 @@ connection with the furnishing, performance, or use.
 Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
+
+[Top of document](#TopOfDoc)
 
 Introduction:
 =============

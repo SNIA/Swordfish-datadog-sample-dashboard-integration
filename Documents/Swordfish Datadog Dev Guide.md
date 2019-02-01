@@ -8,38 +8,19 @@ available.
 
 Contents
 
-Disclaimer 1
-
-Introduction: 2
-
-SNIA Swordfish Sample Integration Dashboard for Datadog 2
-
-Brief Working Functionality: 3
-
-Overview of Agents and Metrics 3
-
-Datadog Agent: 3
-
-The Collector: 3
-
-Dog-StatsD: 3
-
-Forwarder: 3
-
-Agent check: 3
-
-Metrics: 3
-
-Integration of Datadog dashboard 4
-
-Config files (YAML) 4
-
-Checks (python) files 5
-
-Creation of Datadog Dashboard 6
-
-Time Board 7
-
+- [Disclaimer](#disclaimer)
+- [Introduction:](#introduction-)
+- [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
+- [Brief Working Functionality:](#brief-working-functionality-)
+- [Overview of Agents and Metrics](#overview-of-agents-and-metrics)
+  * [Datadog Agent:](#datadog-agent-)
+  * [Agent check:](#agent-check-)
+  * [Metrics:](#metrics-)
+- [Integration of Datadog dashboard](#integration-of-datadog-dashboard)
+  * [Config files (YAML)](#config-files--yaml-)
+  * [Checks (python) files](#checks--python--files)
+- [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
+  * [Time Board](#time-board)
 ScreenBoard 8
 
 Disclaimer

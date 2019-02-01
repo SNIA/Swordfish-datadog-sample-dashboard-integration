@@ -15,7 +15,6 @@ available.
 
 Contents
 ========
-- [Contents](#contents)
 - [Disclaimer](#disclaimer)
 - [Introduction](#introduction)
 - [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
@@ -25,8 +24,8 @@ Contents
   * [Agent check](#agent-check)
   * [Metrics](#metrics)
 - [Integration of Datadog dashboard](#integration-of-datadog-dashboard)
-  * [Configuration Files (YAML)](#configuration-files--yaml-)
-  * [Checks (python) Files](#checks--python--files)
+  * [Configuration Files (YAML)](#\configuration-files--yaml-)
+  * [Checks (python) Files](#/checks--python--files)
 - [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
   * [Time Board](#time-board)
 

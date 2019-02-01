@@ -1,7 +1,7 @@
 
 
 
-<a name="section"></a>
+
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
 SNIA SwordfishTM Datadog Sample Integration Developer Guide
@@ -38,7 +38,7 @@ Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
 
-[Top](#section)
+
 
 Introduction
 ============

@@ -13,8 +13,8 @@ user guides are also available.
 - [Disclaimer](#disclaimer)
     + [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
   * [Brief Working Functionality:](#brief-working-functionality-)
-    + [Steps to install and run Datadog Agent:](#steps-to-install-and-run-datadog-agent-)
-    + [To Configure Sample Dashboard:](#to-configure-sample-dashboard-)
+    + [Steps to install and run Datadog Agent](#steps-to-install-and-run-datadog-agent-)
+    + [To Configure Sample Dashboard](#to-configure-sample-dashboard-)
 
 
 Disclaimer
@@ -101,7 +101,7 @@ Swordfish Dashboard sample functionality:
 
 [Top](#section)
 
-Brief Working Functionality:
+Brief Working Functionality
 ----------------------------
 
 -   Install the Swordfish Emulator in local or host machines or vm.
@@ -123,7 +123,7 @@ Brief Working Functionality:
 
 [Top](#section)
 
-### Steps to install and run Datadog Agent:
+### Steps to install and run Datadog Agent
 
 1.  Before installing Datadog, the Swordfish Emulator should be running in local
     machine or Server machines to be the source of raw data to the Datadog

@@ -38,7 +38,7 @@ Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
 
-[Top of document](#TopOfDoc)
+<div style="text-align: right">  [Top of document](#TopOfDoc) </div> 
 
 Introduction:
 =============

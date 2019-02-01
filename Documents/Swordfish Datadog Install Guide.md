@@ -1,3 +1,6 @@
+
+<a name="section"></a>
+
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
 **SNIA SwordfishTM Datadog Sample Integration Installation Guide**
@@ -6,6 +9,13 @@ The purpose of this Installation Guide is to illustrate the installation process
 which will enable Datadog integration to a Swordfish service, and display of
 system capacity information and available capacity thresholds. Developer and
 user guides are also available.
+
+- [Disclaimer](#disclaimer)
+    + [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
+  * [Brief Working Functionality:](#brief-working-functionality-)
+    + [Steps to install and run Datadog Agent:](#steps-to-install-and-run-datadog-agent-)
+    + [To Configure Sample Dashboard:](#to-configure-sample-dashboard-)
+
 
 Disclaimer
 ==========
@@ -20,6 +30,8 @@ connection with the furnishing, performance, or use.
 Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
+
+[Top](#section)
 
 **Introduction**:
 
@@ -61,6 +73,8 @@ search capabilities for metrics and events, sharing and discussion tools so
 teams can collaborate using the insights they surface, targeted alerts for
 critical issues, and API access to accommodate unique infrastructures.
 
+[Top](#section)
+
 ### SNIA Swordfish Sample Integration Dashboard for Datadog
 
 There are two functional components that, together, make up the SNIA SwordfishTM
@@ -85,6 +99,8 @@ Swordfish Dashboard sample functionality:
 -   Data Collection: Using different custom metrics, data-dog will collect all
     the required data and visualize it in to a Graph or Gauge.
 
+[Top](#section)
+
 Brief Working Functionality:
 ----------------------------
 
@@ -104,6 +120,8 @@ Brief Working Functionality:
 
 -   Create Datadog dashboards to show the required data in graphs. Instrument
     your own gauges, counters, timers and histograms.
+
+[Top](#section)
 
 ### Steps to install and run Datadog Agent:
 
@@ -184,6 +202,8 @@ Brief Working Functionality:
 
 >   sudo /etc/init.d/datadog-agent info
 
+[Top](#section)
+
 ### To Configure Sample Dashboard:
 
 -   A new dashboard can be created from left menu of Datadog page.
@@ -199,6 +219,8 @@ The below is the graph editor window where we can edit the visualization, choose
 metrics and events, adds filters and add functionalities if required.
 
 ![](media/e5ae833574488566e3281e77e2497afe.png)
+
+[Top](#section)
 
 Additional information on the SNIA Swordfish specification and use is available
 at https://www.snia.org/swordfish and <https://github.com/SNIA>.

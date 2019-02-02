@@ -12,7 +12,7 @@ available.
 Contents
 ========
 - [Disclaimer](#disclaimer)
-- [**Introduction**](#--introduction--)
+- [Introduction](#introduction)
 - [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
 - [Overview of Key Features](#overview-of-key-features)
 - [Graph Editor Features](#graph-editor-features)
@@ -36,7 +36,7 @@ Copyright © 2016-2019 Storage Networking Industry Association.
 
 [Top](#section)
 
-**Introduction**
+Introduction
 ================
 
 SNIA Swordfish™ Specification

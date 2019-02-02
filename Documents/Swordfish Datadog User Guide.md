@@ -1,3 +1,5 @@
+<a name="section"></a>
+
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
 SNIA SwordfishTM Datadog Sample Integration User Guide
@@ -6,6 +8,16 @@ SNIA SwordfishTM Datadog Sample Integration User Guide
 The purpose of this User Guide is to illustrate the Datadog dashboard
 integration usage and functionality. Developer and installation guides are also
 available.
+
+Contents
+========
+- [Disclaimer](#disclaimer)
+- [**Introduction**](#--introduction--)
+- [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
+- [Overview of Key Features](#overview-of-key-features)
+- [Graph Editor Features](#graph-editor-features)
+- [Dashboard Screens Examples](#dashboard-screens-examples)
+
 
 Disclaimer
 ==========
@@ -20,6 +32,9 @@ connection with the furnishing, performance, or use.
 Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
+
+
+[Top](#section)
 
 **Introduction**
 ================
@@ -62,6 +77,9 @@ search capabilities for metrics and events, sharing and discussion tools so
 teams can collaborate using the insights they surface, targeted alerts for
 critical issues, and API access to accommodate unique infrastructures.
 
+
+[Top](#section)
+
 SNIA Swordfish Sample Integration Dashboard for Datadog
 =======================================================
 
@@ -80,6 +98,9 @@ Datadog Sample Integration Dashboard functionality:
     values for different collections including Volumes, Storage pools and file
     systems. Data is collected using different custom metrics, Datadog will
     collect all the required data and visualize it in to a Graph or Gauge
+
+
+[Top](#section)
 
 Overview of Key Features
 ========================
@@ -123,6 +144,8 @@ extensions made to the Datadog Agent. Some integrations can potentially produce
 an unlimited number of metrics that can also count as custom, further details on
 which standard integrations emit custom metrics.
 
+[Top](#section)
+
 **Dashboard Features**
 
 The Datadog Dashboard appears at left menu of the Datadog home page as shown in
@@ -140,6 +163,9 @@ The Main Dashboard contains the following features:
 4.  Graph view
 
 ![](media/8c0e315448861170b840705b481cdd04.png)
+
+
+[Top](#section)
 
 Graph Editor Features
 =====================
@@ -159,6 +185,10 @@ tabs
 
 ![](media/0eb6893f170ef740930b71289964e0cf.png)
 
+
+[Top](#section)
+
+
 Dashboard Screens Examples
 ==========================
 
@@ -172,6 +202,9 @@ Monitoring on periodic a schedule will enable display consistency of capacity
 and storage services data.
 
 ![](media/d1dc0ca1f261ce4169418292cf25f221.png)
+
+
+[Top](#section)
 
 Additional information on the SNIA Swordfish specification and use is available
 at https://www.snia.org/swordfish and <https://github.com/SNIA>.

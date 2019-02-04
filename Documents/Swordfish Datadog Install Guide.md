@@ -3,7 +3,9 @@
 
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
-**SNIA SwordfishTM Datadog Sample Integration Installation Guide**
+SNIA Swordfish<sup>TM</sup> Datadog Sample Integration Installation Guide
+==========
+
 
 The purpose of this Installation Guide is to illustrate the installation process
 which will enable Datadog integration to a Swordfish service, and display of
@@ -13,8 +15,9 @@ user guides are also available.
 Contents
 ========
 - [Disclaimer](#disclaimer)
-  * [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
-  * [Brief Working Functionality:](#brief-working-functionality)
+- [Introduction](#introduction)
+- [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
+- [Brief Working Functionality:](#brief-working-functionality)
     + [Steps to Install and Run Datadog Agent](#steps-to-install-and-run-datadog-agent)
     + [Steps To Configure Sample Dashboard](#steps-to-configure-sample-dashboard)
 
@@ -36,7 +39,8 @@ Copyright © 2016-2019 Storage Networking Industry Association.
 
 [Top](#section)
 
-**Introduction**:
+Introduction
+==========
 
 SNIA Swordfish™ Specification
 
@@ -135,11 +139,11 @@ Brief Working Functionality:
 1.  Before installing Datadog, the Swordfish Emulator should be running in local
     machine or Server machines to be the source of raw data to the Datadog
     dashboard.
-
->   Refer to the Swordfish Emulator Installation documentation to find steps to
->   install swordfish emulator in windows or linux systems. Additional steps to
->   configure local machines are described in developer documentation (Python
->   and SNIA emulator need to be installed.)
+    
+    Refer to the Swordfish Emulator Installation documentation to find steps to
+    install swordfish emulator in windows or linux systems. Additional steps to
+    configure local machines are described in developer documentation (Python
+    and SNIA emulator need to be installed.)
 
 1.  After installing the Swordfish Emulator on your network, you can now install
     Datadog.
@@ -147,20 +151,20 @@ Brief Working Functionality:
 2.  Login to the Datadog web site ( <https://app.datadoghq.com/> )
 
 3.  Create API keys and Application keys
-    (<https://app.datadoghq.com/account/settings#api/>) which we have to use in
+    (<https://app.datadoghq.com/account/settings#api/>) which is used in
     our local services. Note: A Datadog account required.
 
 ![](media/1ba1edb0e25e049dfc8b297fc0a3ad7b.png)
 
 1.  Install Datadog to a Local machine.
 
->   Recommend: Ubuntu 16.04 (Swordfish tested configuration)
+    Recommend: Ubuntu 16.04 (Swordfish tested configuration)
 
->   Also supported: Windows 7, 8 and 10
+    Also supported: Windows 7, 8 and 10
 
 >   Should generate install steps for common OS’s, not just Ubuntu…
 
-1.  *Installation Steps: (Provided information for Ubuntu Linux configuration)*
+1.  Installation Steps: (Provided information for Ubuntu Linux configuration)
 
     Run the below commands to install Datadog in local machine.
 
@@ -168,7 +172,7 @@ Brief Working Functionality:
 
     -   sudo apt-get install apt-transport-https
 
->   Set Datadog deb repo on local and import Datadog api key.
+    Set Datadog deb repo on local and import Datadog api key.
 
 -   sudo sh -c "echo 'deb https://apt.datadoghq.com/ stable 6' \>
     /etc/apt/sources.list.d/datadog.list"
@@ -176,18 +180,18 @@ Brief Working Functionality:
 -   sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80
     382E94DE
 
->   Use local apt repo and install the agent
+    Use local apt repo and install the agent
 
 -   sudo apt-get update
 
 -   sudo apt-get install datadog-agent
-
->   Place our API key and copy it to config
+    
+    Place our API key and copy it to config
 
 -   sudo sh -c "sed 's/api_key:.\*/api_key: a7bf617d0e83ce090b870bc3853019c3/'
     /etc/datadog-agent/datadog.yaml.example \> /etc/datadog-agent/datadog.yaml"
-
->   Start Agent
+    
+    Start Agent
 
 -   sudo systemctl restart datadog-agent.service
 
@@ -197,13 +201,13 @@ Brief Working Functionality:
 
 -   sudo /etc/init.d/datadog-agent start
 
->   Restart agent running as a service
+    Restart agent running as a service
 
 -   sudo /etc/init.d/datadog-agent restart
 
->   Status page of running agent
+    Status page of running agent
 
->   sudo /etc/init.d/datadog-agent info
+    sudo /etc/init.d/datadog-agent info
 
 
 [Top](#section)
@@ -223,6 +227,7 @@ The below is the graph editor window where we can edit the visualization, choose
 metrics and events, adds filters and add functionalities if required.
 
 ![](media/e5ae833574488566e3281e77e2497afe.png)
+==========
 
 
 [Top](#section)

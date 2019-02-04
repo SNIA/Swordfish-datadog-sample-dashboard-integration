@@ -204,6 +204,8 @@ Existing checks must be modified to create and collect metrics.
     the check file is named “**sample.py**“, then the config file must be named
     **sample.yaml.**
 
+[Top](#section)
+
 Configuration Files (YAML)
 -------------------
 
@@ -280,6 +282,8 @@ type.
 
 A new Dashboard window will open as shown in below figure. The Developer can
 select different types of components for visualization.
+
+[Top](#section)
 
 Time Board
 ----------

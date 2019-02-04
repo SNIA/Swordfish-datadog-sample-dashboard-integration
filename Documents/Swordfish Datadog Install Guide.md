@@ -93,19 +93,19 @@ Swordfish dashboard capability in the Datadog monitoring service.
 
 Datadog Agent:
 
->   The Datadog Agent is a piece of software that runs on any host (or set of
->   hosts if high availability configuration is required). Its job is to
->   faithfully collect events and metrics and bring them to Datadog in order to
->   present and manipulate the monitoring and performance data within the
->   dashboard. The Datadog Agent is open source; view the source code on GitHub
->   [(github.com/DataDog](https://github.com/DataDog)).
+   The Datadog Agent is a piece of software that runs on any host (or set of
+   hosts if high availability configuration is required). Its job is to
+   faithfully collect events and metrics and bring them to Datadog in order to
+   present and manipulate the monitoring and performance data within the
+   dashboard. The Datadog Agent is open source; view the source code on GitHub
+   [(github.com/DataDog](https://github.com/DataDog)).
 
 Swordfish Dashboard sample functionality:
 
--   Swordfish Dashboard views: Capacity data and threshold values for different
-    collections like Volumes, Storage pools and filesystems.
+   Swordfish Dashboard views: Capacity data and threshold values for different
+   collections like Volumes, Storage pools and filesystems.
 
--   Data Collection: Using different custom metrics, data-dog will collect all
+    Data Collection: Using different custom metrics, data-dog will collect all
     the required data and visualize it in to a Graph or Gauge.
 
 
@@ -114,21 +114,21 @@ Swordfish Dashboard sample functionality:
 Brief Working Functionality:
 ----------------------------
 
--   Install the Swordfish Emulator in local or host machines or vm.
+    Install the Swordfish Emulator in local or host machines or vm.
 
--   Install Datadog agent in each of the environment locations including vm,
+    Install Datadog agent in each of the environment locations including vm,
     server, instances, container and running hosts.
 
--   Configure Datadog to collect data from the Swordfish emulator where it’s
+    Configure Datadog to collect data from the Swordfish emulator where it’s
     running.
 
--   Submit custom application metrics by writing code (not clear on this step?)
+    Submit custom application metrics by writing code (not clear on this step?)
 
--   Open https://www.datadoghq.com in browser or user agent.
+    Open https://www.datadoghq.com in browser or user agent.
 
--   Register and login to <https://www.datadoghq.com>.
+    Register and login to <https://www.datadoghq.com>.
 
--   Create Datadog dashboards to show the required data in graphs. Instrument
+    Create Datadog dashboards to show the required data in graphs. Instrument
     your own gauges, counters, timers and histograms.
 
 
@@ -174,26 +174,26 @@ Brief Working Functionality:
 
     Set Datadog deb repo on local and import Datadog api key.
 
--   sudo sh -c "echo 'deb https://apt.datadoghq.com/ stable 6' \>
+    sudo sh -c "echo 'deb https://apt.datadoghq.com/ stable 6' \>
     /etc/apt/sources.list.d/datadog.list"
 
--   sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80
+    sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80
     382E94DE
 
     Use local apt repo and install the agent
 
--   sudo apt-get update
+    sudo apt-get update
 
--   sudo apt-get install datadog-agent
+    sudo apt-get install datadog-agent
     
     Place our API key and copy it to config
 
--   sudo sh -c "sed 's/api_key:.\*/api_key: a7bf617d0e83ce090b870bc3853019c3/'
+    sudo sh -c "sed 's/api_key:.\*/api_key: a7bf617d0e83ce090b870bc3853019c3/'
     /etc/datadog-agent/datadog.yaml.example \> /etc/datadog-agent/datadog.yaml"
     
     Start Agent
 
--   sudo systemctl restart datadog-agent.service
+    sudo systemctl restart datadog-agent.service
 
 1.  *Start Datadog*
 

@@ -1,10 +1,29 @@
+
+<a name="section"></a>
+
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
-SNIA SwordfishTM Datadog Sample Integration Developer Guide
+SNIA Swordfish<sup>TM</sup> Datadog Sample Integration Developer Guide
 
 The purpose of this Developer Guide is to display the Datadog dashboards and
 provide instruction on how to create them. Installation and user guides are also
 available.
+
+Contents
+- [Disclaimer](#disclaimer)
+- [Introduction](#introduction)
+- [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
+- [Brief Working Functionality](#brief-working-functionality)
+- [Overview of Agents and Metrics](#overview-of-agents-and-metrics)
+  * [Datadog Agent](#datadog-agent)
+  * [Agent check](#agent-check)
+  * [Metrics](#metrics)
+- [Integration of Datadog Dashboard](#integration-of-datadog-dashboard)
+  * [Configuration Files (YAML)](#configuration-files-yaml)
+  * [Checks (Python) Files](#checks-python-files)
+- [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
+  * [Time Board](#time-board)
+
 
 Disclaimer
 ==========
@@ -19,6 +38,8 @@ connection with the furnishing, performance, or use.
 Suggestions for revisions should be directed to http://www.snia.org/feedback/.
 
 Copyright © 2016-2019 Storage Networking Industry Association.
+
+[Top](#section)
 
 Introduction
 ============
@@ -61,6 +82,9 @@ search capabilities for metrics and events, sharing and discussion tools so
 teams can collaborate using the insights they surface, targeted alerts for
 critical issues, and API access to accommodate unique infrastructures.
 
+[Top](#section)
+
+
 SNIA Swordfish Sample Integration Dashboard for Datadog
 =======================================================
 
@@ -85,6 +109,9 @@ different collections like Volumes, Storage pools and filesystems.
 Data Collection: Using different custom metrics, Datadog will collect all the
 required data and visualize it in to a Graph or Gauge
 
+[Top](#section)
+
+
 Brief Working Functionality
 ===========================
 
@@ -108,6 +135,9 @@ and use the Datadog dashboards.
 7.  Create Datadog dashboards to show the required data in graphs. Instrument
     your own gauges, counters, timers and histograms.
 
+[Top](#section)
+    
+
 Overview of Agents and Metrics
 ==============================
 
@@ -127,7 +157,7 @@ from applications.
 Forwarder: Retrieves data from both DogStatsD and the collector, and then queues
 it up to be sent to Datadog.
 
-Agent check:
+Agent check
 ------------
 
 Agent checks are used to collect metrics from custom application or systems.
@@ -140,7 +170,7 @@ instance which is a dict having configuration of particular instance.
 
 The check method is run once per instance defined in checks configuration.
 
-Metrics:
+Metrics
 --------
 
 Metrics allows creating Query metrics from any time period and post metrics data
@@ -152,7 +182,9 @@ changed. Metrics type is visible on metrics summary page.
 There are many ways to send a metrics to Datadog, including with Datadog agent
 directly, by using StatsD, or submit metrics directly to Datadog HTTP API.
 
-Integration of Datadog dashboard
+[Top](#section)
+
+Integration of Datadog Dashboard
 ================================
 
 After completing the installation of Datadog Agent, the /etc/dd-agent folder
@@ -172,7 +204,7 @@ Existing checks must be modified to create and collect metrics.
     the check file is named “**sample.py**“, then the config file must be named
     **sample.yaml.**
 
-Config files (YAML)
+Configuration Files (YAML)
 -------------------
 
 -   **Objective:** the developer can configure server integration by adding url
@@ -195,7 +227,9 @@ Config files (YAML)
 
 ![](media/15cc65f70cc3988b49ebe627efb7458e.png)
 
-Checks (python) files
+[Top](#section)
+
+Checks (Python) Files
 ---------------------
 
 -   **Objective:** The main part of checks is making a request to a URL. Once
@@ -225,6 +259,9 @@ Checks (python) files
     -   E.g., sudo service datadog-agent restart . (In Ubuntu operating system.)
 
 ![](media/7224012d11ae35b263adaa2f0592a003.png)
+
+[Top](#section)
+
 
 Creation of Datadog Dashboard
 =============================
@@ -273,6 +310,8 @@ After all the above changes are complete, click on save and create next gauge if
 desired. Note that there are few visualizations available in ScreenBoards that
 are not in Timeboards.
 
+[Top](#section)
+
 **ScreenBoard**
 
 To create a ScreenBoard, first create a new dashboard and then choose
@@ -303,6 +342,10 @@ The graph editor mode is shown in figure below. The developer can use the
 options to select visualization and add metrics data.
 
 ![](media/47ed65bb9e9e6b5e093b64709b637bbc.png)
+=============================
+
+
+[Top](#section)
 
 Additional information on the SNIA Swordfish specification and use is available
 at https://www.snia.org/swordfish and <https://github.com/SNIA>.

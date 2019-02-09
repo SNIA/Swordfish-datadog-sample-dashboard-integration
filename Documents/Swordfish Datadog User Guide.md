@@ -2,7 +2,7 @@
 
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
-SNIA SwordfishTM Datadog Sample Integration User Guide
+SNIA Swordfish<sup>TM</sup> Datadog Sample Integration User Guide
 ======================================================
 
 The purpose of this User Guide is to illustrate the Datadog dashboard
@@ -15,7 +15,6 @@ Contents
 - [Introduction](#introduction)
 - [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
 - [Overview of Key Features](#overview-of-key-features)
-- [Graph Editor Features](#graph-editor-features)
 - [Dashboard Screens Examples](#dashboard-screens-examples)
 
 
@@ -39,7 +38,7 @@ Copyright © 2016-2019 Storage Networking Industry Association.
 Introduction
 ================
 
-SNIA Swordfish™ Specification
+**SNIA Swordfish™ Specification**
 
 The SNIA Swordfish™ specification helps to provide a unified approach for the
 management of storage and servers in hyperscale and cloud infrastructure
@@ -58,7 +57,7 @@ IT administrators need to do with storage equipment and storage services in a
 data center. As a result, the API provides functionality that simplifies the way
 storage can be allocated, monitored, and managed.
 
-SNIA Swordfish™ Datadog Sample Integration
+**SNIA Swordfish™ Datadog Sample Integration**
 
 The Swordfish Datadog Sample Integration Dashboard provides a dashboard for the
 Datadog monitoring service that can connect to a Swordfish service (including
@@ -109,7 +108,7 @@ The key features of the integration include events, dashboards and metrics.
 These features allow for data to be displayed and viewed in multiple
 configurable ways to accommodate user needs.
 
-**Events**:
+**Events Features**
 
 -   The Event Stream is based on conventions similar a weblog (blog).
 
@@ -121,21 +120,21 @@ configurable ways to accommodate user needs.
 -   Event stream content can be filtered and viewed by user, source, tag, host,
     status, priority, and incident.
 
-**Dashboards**:
+**Dashboards Features**
 
-Dashboards contain graphs with real-time performance metrics which allow the
+-   Dashboards contain graphs with real-time performance metrics which allow the
 user to perform the following:
 
-Synchronous mousing occurs when the cursor moves across all graphs in a
+-   Synchronous mousing occurs when the cursor moves across all graphs in a
 screenboard.
 
-Vertical bars are displayed events in the context of the metric.
+-   Vertical bars are displayed events in the context of the metric.
 
-Click & drag on a graph to zoom-in on a particular time-frame.
+-   Click & drag on a graph to zoom-in on a particular time-frame.
 
-Hovering over the graph the event stream moves with you.
+-   Hovering over the graph the event stream moves with you.
 
-Data can be displayed by zone, host, or total usage.
+-   Data can be displayed by zone, host, or total usage.
 
 **Metrics**
 
@@ -167,8 +166,8 @@ The Main Dashboard contains the following features:
 
 [Top](#section)
 
-Graph Editor Features
-=====================
+**Graph Editor Features**
+
 
 Using the graph editor, the user can edit how the information is displayed and
 change the data and visualization. The graphing editor has Share, JSON, and Edit
@@ -196,7 +195,10 @@ Below figure shows capacity data in FileServices.
 
 ![](media/096ca68d20edc37d06c6c14e05f5cc25.png)
 
->   Capacitydata with Threshold values.
+
+
+**Capacitydata with Threshold values.**
+
 
 Monitoring on periodic a schedule will enable display consistency of capacity
 and storage services data.

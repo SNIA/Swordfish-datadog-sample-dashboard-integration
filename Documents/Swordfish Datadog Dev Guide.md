@@ -3,7 +3,7 @@
 
 ![https://www.snia.org/sites/default/files/SMI/member-logos/SNIA_SwordfishLogo%20Tag.jpg](media/31f6d669644d7fa491ff3b007c3e5b34.jpg)
 
-## SNIA Swordfish<sup>TM</sup> Datadog Sample Integration Developer Guide
+# SNIA Swordfish<sup>TM</sup> Datadog Sample Integration Developer Guide
 
 The purpose of this Developer Guide is to display the Datadog dashboards and
 provide instruction on how to create them. Installation and user guides are also
@@ -22,7 +22,9 @@ available.
   * [Configuration Files (YAML)](#configuration-files-yaml)
   * [Checks (Python) Files](#checks-python-files)
 - [Creation of Datadog Dashboard](#creation-of-datadog-dashboard)
-  * [Time Board](#time-board)
+  * [TimeBoard](#timeboard)
+  * [ScreenBoard](#screenboard)
+
 
 
 Disclaimer
@@ -93,7 +95,7 @@ Datadog Sample Integration Dashboard functionality: the Datadog agent that
 collects information from the Swordfish APIs on the storage systems, and the
 Swordfish dashboard capability in the Datadog monitoring service.
 
-Datadog Agent:
+**Datadog Agent**
 
 The Datadog Agent is a piece of software that runs on any host (or set of hosts
 if high availability configuration is required)Its job is to faithfully collect
@@ -101,7 +103,7 @@ events and metrics and bring them to Datadog in order to present and manipulate
 the monitoring and performance data within the dashboardThe Datadog Agent is
 open source; view the source code on GitHub.
 
-Swordfish Dashboard sample functionality:
+**Swordfish Dashboard Sample Functionality**
 
 Configurable Swordfish Dashboard views: Capacity data and threshold values for
 different collections like Volumes, Storage pools and filesystems.
@@ -151,11 +153,14 @@ agent has three main parts: collector, DogStatsD and forwarder.
 The Collector: Runs checks on the current machine for whatever integrations you
 have and captures system metrics such as memory and CPU.
 
-Dog-StatsD: A StatsD-compatible backend server you can send custom metrics to
+Dog-StatsD: A StatsD-compatible backend server can send custom metrics to
 from applications.
 
 Forwarder: Retrieves data from both DogStatsD and the collector, and then queues
 it up to be sent to Datadog.
+
+[Top](#section)
+
 
 Agent check
 ------------
@@ -169,6 +174,9 @@ directory and it requires a check () method that takes one argument and an
 instance which is a dict having configuration of particular instance.
 
 The check method is run once per instance defined in checks configuration.
+
+[Top](#section)
+
 
 Metrics
 --------
@@ -206,6 +214,7 @@ Existing checks must be modified to create and collect metrics.
 
 [Top](#section)
 
+
 Configuration Files (YAML)
 -------------------
 
@@ -231,11 +240,12 @@ Configuration Files (YAML)
 
 [Top](#section)
 
+
 Checks (Python) Files
 ---------------------
 
 -   **Objective:** The main part of checks is making a request to a URL. Once
-    the request passes, you may then write custom metrics for service URL which
+    the request passes, the developer may then write custom metrics for service URL which
     is placed in .yaml file.
 
 -   All the custom checks inherited from AgentCheck and it will take check () to
@@ -285,7 +295,8 @@ select different types of components for visualization.
 
 [Top](#section)
 
-Time Board
+
+TimeBoard
 ----------
 
 In Timeboard, the developer selects different types of graphs by simply dragging
@@ -296,32 +307,34 @@ can be used.
 
 ![](media/6f495657ac7eee8f0e68998d9405f657.png)
 
+
 Line graph displays a line for each graph of data. By default, all hosts that
 report metrics are combined into single line. Developers can choose one of the
 metrics collected by organization here, as long as those metrics have seen new
 data in last 24 hrs.
 
 Next dropdown will select the subset of hosts from which to collect data. Refer
-back to the tags which were previously created in the Config files. Here you can
+back to the tags which were previously created in the Config files. Here the developer can
 choose that same tag and see metrics only from the hosts running a database.
-Next you can choose whether you want to show avg, max, min and sum of values in
+Next the developer can choose whether to show the avg, max, min or the sum of values in
 a metrics.
 
-If you click the advanced link to the right, you can combine metrics using
-variety of mathematical functions.
+Metrics can be combined by using the advanced link on the right side of the screen to select a variety of functions.
 
 After all the above changes are complete, click on save and create next gauge if
 desired. Note that there are few visualizations available in ScreenBoards that
-are not in Timeboards.
+are not available in Timeboards.
 
 [Top](#section)
 
-**ScreenBoard**
+
+ScreenBoard
+----------
 
 To create a ScreenBoard, first create a new dashboard and then choose
-Screenboard. In Screenboard you can place and size the graphs anywhere you like
-and you can control the period shown on per graph basis. There are few
-visualizations available only in screenboard.
+Screenboard. In Screenboard the developer can place and size the graphs anywhere on the screen 
+and can control the period shown on per graph basis. There are few
+visualizations available only in Screenboard.
 
 ![](media/1af4ca9f7cb2282e288e1161ecccdd36.png)
 
@@ -332,10 +345,13 @@ to create a gauge.
 ![](media/4afdffdcd48386954397e5a5d552fbcc.png)
 
 Samples of the different types of graphs in a dashboard are shown in the
-following figure. If a Developer wants to modify the data , you must click on
+following figure. If a developer wants to modify the data, the developer must click on
 the ‘Edit Board’ button.
 
 ![](media/cba512a32433d136a49ea80b467ac9e8.png)
+
+[Top](#section)
+
 
 The following Dashboard shows the Consumed bytes and Allocated bytes data.
 Select the graph from the top menu by editing the menu.
@@ -350,6 +366,7 @@ options to select visualization and add metrics data.
 
 
 [Top](#section)
+
 
 Additional information on the SNIA Swordfish specification and use is available
 at https://www.snia.org/swordfish and <https://github.com/SNIA>.

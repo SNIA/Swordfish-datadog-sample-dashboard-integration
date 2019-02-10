@@ -5,8 +5,6 @@
 
 SNIA Swordfish<sup>TM</sup> Datadog Sample Integration Installation Guide
 ==========
-
-
 The purpose of this Installation Guide is to illustrate the installation process
 which will enable Datadog integration to a Swordfish service, and display of
 system capacity information and available capacity thresholds. Developer and
@@ -17,9 +15,11 @@ Contents
 - [Disclaimer](#disclaimer)
 - [Introduction](#introduction)
 - [SNIA Swordfish Sample Integration Dashboard for Datadog](#snia-swordfish-sample-integration-dashboard-for-datadog)
-- [Brief Working Functionality:](#brief-working-functionality)
-    + [Steps to Install and Run Datadog Agent](#steps-to-install-and-run-datadog-agent)
-    + [Steps To Configure Sample Dashboard](#steps-to-configure-sample-dashboard)
+    + [Datadog Agent](#datadog-agent)
+    + [Swordfish Dashboard Functionality](#swordfish-dashboard-functionality)
+- [Brief Working Overview](#brief-working-overview)
+- [Steps to Install and Run the Datadog Agent](#steps-to-install-and-run-the-datadog-agent)
+- [Steps To Configure Sample Dashboard](#steps-to-configure-sample-dashboard)
 
 
 Disclaimer
@@ -42,7 +42,7 @@ Copyright © 2016-2019 Storage Networking Industry Association.
 Introduction
 ==========
 
-SNIA Swordfish™ Specification
+**SNIA Swordfish™ Specification**
 
 The SNIA Swordfish™ specification helps to provide a unified approach for the
 management of storage and servers in hyperscale and cloud infrastructure
@@ -61,7 +61,7 @@ IT administrators need to do with storage equipment and storage services in a
 data center. As a result, the API provides functionality that simplifies the way
 storage can be allocated, monitored, and managed.
 
-SNIA Swordfish™ Datadog Sample Integration
+**SNIA Swordfish™ Datadog Sample Integration**
 
 The Swordfish Datadog sample dashboard integration provides a dashboard for the
 Datadog monitoring service that can connect to a Swordfish service (including
@@ -84,14 +84,13 @@ critical issues, and API access to accommodate unique infrastructures.
 [Top](#section)
 
 SNIA Swordfish Sample Integration Dashboard for Datadog
--------------------------------------------------------
-
+==========
 There are two functional components that, together, make up the SNIA SwordfishTM
 Datadog Sample Integration Dashboard functionality: the Datadog agent that
 collects information from the Swordfish APIs on the storage systems, and the
 Swordfish dashboard capability in the Datadog monitoring service.
 
-Datadog Agent:
+### Datadog Agent
 
    The Datadog Agent is a piece of software that runs on any host (or set of
    hosts if high availability configuration is required). Its job is to
@@ -100,137 +99,138 @@ Datadog Agent:
    dashboard. The Datadog Agent is open source; view the source code on GitHub
    [(github.com/DataDog](https://github.com/DataDog)).
 
-Swordfish Dashboard sample functionality:
+### Swordfish Dashboard Functionality
+    
+   The Swordfish Dashboard offers views of capacity data and threshold values for different
+   collections including Volumes, Storage pools and filesystems.
 
-   Swordfish Dashboard views: Capacity data and threshold values for different
-   collections like Volumes, Storage pools and filesystems.
+   The Data Collection uses various custom metrics. Datadog will collect all
+   the required values and visualize the data it in to a Graph or Gauge.
 
-    Data Collection: Using different custom metrics, data-dog will collect all
-    the required data and visualize it in to a Graph or Gauge.
 
 
 [Top](#section)
 
-Brief Working Functionality:
-----------------------------
+Brief Working Overview
+==========
+The following steps provide an overview of the actions necessary in order to utilize the Datadog integration.
 
-    Install the Swordfish Emulator in local or host machines or vm.
+1.  Install the Swordfish Emulator in local or host machines or virtual machines (vm).
 
-    Install Datadog agent in each of the environment locations including vm,
+2.  Install Datadog agent in each of the environment locations including vm,
     server, instances, container and running hosts.
 
-    Configure Datadog to collect data from the Swordfish emulator where it’s
+3.  Configure Datadog to collect data from the Swordfish emulator where it is
     running.
 
-    Submit custom application metrics by writing code (not clear on this step?)
+4.  Submit custom application metrics by writing code.
 
-    Open https://www.datadoghq.com in browser or user agent.
+5.  Open https://www.datadoghq.com in browser or user agent.
 
-    Register and login to <https://www.datadoghq.com>.
+6.  Register and login to <https://www.datadoghq.com>.
 
-    Create Datadog dashboards to show the required data in graphs. Instrument
-    your own gauges, counters, timers and histograms.
+7.  Create Datadog dashboards to show the required data in graphs, customized gauges, 
+    counters, timers and histograms.
 
 
 [Top](#section)
 
-### Steps to Install and Run Datadog Agent
+Steps to Install and Run the Datadog Agent
+==========
 
-1.  Before installing Datadog, the Swordfish Emulator should be running in local
-    machine or Server machines to be the source of raw data to the Datadog
-    dashboard.
+1. Before installing Datadog, the Swordfish Emulator should be running on local
+   machines or Server machines to be the source of raw data to the Datadog
+   dashboard.
     
-    Refer to the Swordfish Emulator Installation documentation to find steps to
-    install swordfish emulator in windows or linux systems. Additional steps to
-    configure local machines are described in developer documentation (Python
-    and SNIA emulator need to be installed.)
+   Refer to the Swordfish Emulator Installation documentation to find steps to
+   install the swordfish emulator in windows or linux systems. Additional steps to
+   configure local machines are described in developer documentation (Python
+   and SNIA emulator need to be installed.)
 
-1.  After installing the Swordfish Emulator on your network, you can now install
-    Datadog.
+2.  After installing the Swordfish Emulator on the local network, the next step is to install Datadog.
 
-2.  Login to the Datadog web site ( <https://app.datadoghq.com/> )
+3.  Login to the Datadog web site ( <https://app.datadoghq.com/> )
 
-3.  Create API keys and Application keys
-    (<https://app.datadoghq.com/account/settings#api/>) which is used in
-    our local services. Note: A Datadog account required.
+4.  Create API keys and Application keys to be used in local services. 
+    (<https://app.datadoghq.com/account/settings#api/>) 
+    Note: A Datadog account required for this process.
 
 ![](media/1ba1edb0e25e049dfc8b297fc0a3ad7b.png)
 
-1.  Install Datadog to a Local machine.
+5.  Install Datadog on a local machine.
 
-    Recommend: Ubuntu 16.04 (Swordfish tested configuration)
+    Recommended Operating System: Ubuntu 16.04 (Swordfish tested configuration)
+    Additional Supported Operating Systems: Windows 7, 8 and 10
 
-    Also supported: Windows 7, 8 and 10
+6. Installation Steps (For recommended operating system Ubuntu Linux configuration.)
 
->   Should generate install steps for common OS’s, not just Ubuntu…
+   Run the below commands to install Datadog in local machine.
 
-1.  Installation Steps: (Provided information for Ubuntu Linux configuration)
+     - sudo apt-get update
 
-    Run the below commands to install Datadog in local machine.
+     - sudo apt-get install apt-transport-https
 
-    -   sudo apt-get update
-
-    -   sudo apt-get install apt-transport-https
-
-    Set Datadog deb repo on local and import Datadog api key.
-
-    sudo sh -c "echo 'deb https://apt.datadoghq.com/ stable 6' \>
-    /etc/apt/sources.list.d/datadog.list"
-
-    sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80
-    382E94DE
-
-    Use local apt repo and install the agent
-
-    sudo apt-get update
-
-    sudo apt-get install datadog-agent
+   Set Datadog deb repo on local and import Datadog API key.
+   
+     - sudo sh -c "echo 'deb https://apt.datadoghq.com/ stable 6' \>
+      /etc/apt/sources.list.d/datadog.list"
     
-    Place our API key and copy it to config
+     - sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80382E94DE
 
-    sudo sh -c "sed 's/api_key:.\*/api_key: a7bf617d0e83ce090b870bc3853019c3/'
-    /etc/datadog-agent/datadog.yaml.example \> /etc/datadog-agent/datadog.yaml"
+   Use local apt repo and install the agent.
+
+     - sudo apt-get update
+
+     - sudo apt-get install datadog-agent
     
-    Start Agent
+   Place created API key and copy it to configuration.
 
-    sudo systemctl restart datadog-agent.service
+     - sudo sh -c "sed 's/api_key:.\*/api_key: a7bf617d0e83ce090b870bc3853019c3/'
+      /etc/datadog-agent/datadog.yaml.example \> /etc/datadog-agent/datadog.yaml"
+    
+   Start Agent
 
-1.  *Start Datadog*
+     - sudo systemctl restart datadog-agent.service
 
-    Start Agent as a service
+7. Start the Datadog agent
 
--   sudo /etc/init.d/datadog-agent start
+    Start the Agent as a service:
 
-    Restart agent running as a service
+   -  sudo /etc/init.d/datadog-agent start
 
--   sudo /etc/init.d/datadog-agent restart
+   Restart the agent running as a service:
 
-    Status page of running agent
+  -   sudo /etc/init.d/datadog-agent restart
 
-    sudo /etc/init.d/datadog-agent info
+   View the status page of the running agent:
+
+  -   sudo /etc/init.d/datadog-agent info
 
 
 [Top](#section)
 
-### Steps To Configure Sample Dashboard
+Steps To Configure Sample Dashboard
+==========
+   A new dashboard can be created from left menu of Datadog page.
 
--   A new dashboard can be created from left menu of Datadog page.
+   -   Click on Dashboard -\> New Dashboard
 
-    -   Click on Dashboard -\> New Dashboard
-
--   After creating dashboard, graphs can be selected by dragging widgets onto
-    the board to visualize the data.
+   After creating the dashboard, graphs can be selected by dragging widgets onto
+   the dashboard to visualize the data in a range of customizable views.
 
 ![](media/cba512a32433d136a49ea80b467ac9e8.png)
 
-The below is the graph editor window where we can edit the visualization, choose
-metrics and events, adds filters and add functionalities if required.
+[Top](#section)
+
+The dashboard offers user defined customization through selections for graph, display and visualization preferences, metrics and events, and titles options. Sample Datadog graph options can be viewed on the Datadog site at https://docs.datadoghq.com/graphing/.
+
 
 ![](media/e5ae833574488566e3281e77e2497afe.png)
-==========
+
 
 
 [Top](#section)
+
 
 Additional information on the SNIA Swordfish specification and use is available
 at https://www.snia.org/swordfish and <https://github.com/SNIA>.

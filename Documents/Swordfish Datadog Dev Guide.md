@@ -225,10 +225,10 @@ Configuration Files (YAML)
 -   From the figure below, the .yaml file contains init_config and an
     ‘instances’ section.
 
->   The Init_config section allows configuration options available to run
->   checks.
+     The Init_config section allows configuration options available to run
+     checks.
 
->   The Instances Section is list of instances that runs against checks.
+     The Instances Section is list of instances that runs against checks.
 
 -   A developer can integrate Swordfish service by defining a URL and some
     information regarding the service.

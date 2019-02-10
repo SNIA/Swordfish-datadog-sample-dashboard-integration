@@ -19,7 +19,7 @@ Contents
     + [Swordfish Dashboard Functionality](#swordfish-dashboard-functionality)
 - [Brief Working Overview](#brief-working-overview)
 - [Steps to Install and Run the Datadog Agent](#steps-to-install-and-run-the-datadog-agent)
-- [Steps To Configure Sample Dashboard](#steps-to-configure-sample-dashboard)
+- [Creating and Configuring a Sample Dashboard](#creating-and-configuring-a-sample-dashboard)
 
 
 Disclaimer
@@ -198,18 +198,18 @@ Steps to Install and Run the Datadog Agent
 
    -  sudo /etc/init.d/datadog-agent start
 
-   Restart the agent running as a service:
+    Restart the agent running as a service:
 
-  -   sudo /etc/init.d/datadog-agent restart
+   -  sudo /etc/init.d/datadog-agent restart
 
-   View the status page of the running agent:
+    View the status page of the running agent:
 
-  -   sudo /etc/init.d/datadog-agent info
+   -  sudo /etc/init.d/datadog-agent info
 
 
 [Top](#section)
 
-Steps To Configure Sample Dashboard
+Creating and Configuring a Sample Dashboard
 ==========
    A new dashboard can be created from left menu of Datadog page.
 
